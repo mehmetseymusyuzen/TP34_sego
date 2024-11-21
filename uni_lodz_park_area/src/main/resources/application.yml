@@ -1,0 +1,54 @@
+server:
+  port: 8080
+
+# MYSQL
+spring:
+  application:
+    name: uni_lodz_park_area
+  config:
+    import: optional:file:.env[.properties]
+  datasource:
+    url: jdbc:mysql://${PARKING_LOT_DB_IP:localhost}:${PARKING_LOT_DB_PORT:3306}/uni_lodz_park_area
+    username: ${DATABASE_USERNAME:root}
+    password: ${DATABASE_PASSWORD:password}
+
+  liquibase:
+    enabled: true
+    changeLog: "classpath:db/changelog/db.changelog-master.yaml"
+    drop-first: ${PARKING_LOT_LIQUIBASE_ENABLE_DROP_FIRST:false}
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    open-in-view: true
+
+
+# SWAGGER
+springdoc:
+  api-docs:
+    enabled: true
+  show-actuator: true
+
+# JWT
+jwt:
+  secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+  expireMs: 6000000 # 1 Hour
+  refrEshexpireMs: 6000000 # 1 Hour
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"
+          - prometheus
+  prometheus:
+    metrics:
+      export:
+        enabled: true
