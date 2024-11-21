@@ -10,4 +10,5 @@ public class UniLodzParkAreaApplication {
         SpringApplication.run(UniLodzParkAreaApplication.class, args);
     }
 
+
 }
