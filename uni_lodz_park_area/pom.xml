@@ -13,19 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>uni_lodz_park_area</name>
     <description>uni_lodz_park_area</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
+
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -42,10 +30,6 @@
         </dependency>
 
 
-        <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
