@@ -1,8 +1,8 @@
 package org.team_project.uni_lodz_park_area.service.parking_area.impl;
 
-import org.team_project.uni_lodz_park_area.exception.parkingarea.DailyIncomeException;
-import org.team_project.uni_lodz_park_area.exception.parkingarea.InvalidDateException;
-import org.team_project.uni_lodz_park_area.exception.parkingarea.ParkingAreaNotFoundException;
+import org.team_project.uni_lodz_park_area.exception.parking_area.DailyIncomeException;
+import org.team_project.uni_lodz_park_area.exception.parking_area.InvalidDateException;
+import org.team_project.uni_lodz_park_area.exception.parking_area.ParkingAreaNotFoundException;
 import org.team_project.uni_lodz_park_area.model.ParkingArea;
 import org.team_project.uni_lodz_park_area.model.dto.response.parkingarea.ParkingAreaIncomeResponse;
 import org.team_project.uni_lodz_park_area.model.entity.ParkingAreaEntity;

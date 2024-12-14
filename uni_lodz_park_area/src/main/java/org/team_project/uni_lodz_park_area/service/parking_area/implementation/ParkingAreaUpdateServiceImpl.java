@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.service.parking_area.implementation;
 
-import org.team_project.uni_lodz_park_area.exception.parkingarea.ParkingAreaNotFoundException;
+import org.team_project.uni_lodz_park_area.exception.parking_area.ParkingAreaNotFoundException;
 import org.team_project.uni_lodz_park_area.model.ParkingArea;
 import org.team_project.uni_lodz_park_area.model.dto.request.parking_area.ParkingAreaUpdateRequest;
 import org.team_project.uni_lodz_park_area.model.entity.ParkingAreaEntity;
