@@ -1,6 +1,6 @@
 package com.project.parkinglot.builder;
 
-import com.project.parkinglot.model.Price;
+import org.team_project.uni_lodz_park_area.model.Price;
 
 import java.math.BigDecimal;
 import java.util.UUID;

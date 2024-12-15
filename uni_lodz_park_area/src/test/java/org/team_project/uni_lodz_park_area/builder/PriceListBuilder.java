@@ -1,7 +1,7 @@
 package com.project.parkinglot.builder;
 
 import com.github.javafaker.Faker;
-import com.project.parkinglot.model.Price;
+import org.team_project.uni_lodz_park_area.model.Price;
 import com.project.parkinglot.model.PriceList;
 
 import java.util.List;
