@@ -1,4 +1,4 @@
-package com.project.parkinglot.model.dto.response.park;
+package org.team_project.uni_lodz_park_area.model.dto.response.park;
 
 import com.project.parkinglot.common.model.BaseDomainModel;
 import com.project.parkinglot.model.dto.request.park.ParkCheckInRequest;

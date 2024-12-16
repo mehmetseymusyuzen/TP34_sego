@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.model;
 
-import org.team_project.uni_lodz_park_area.model.BaseDomainModel;
+import com.project.parkinglot.common.model.BaseDomainModel;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 

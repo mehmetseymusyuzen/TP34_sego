@@ -1,4 +1,4 @@
-package com.project.parkinglot.base;
+package org.team_project.uni_lodz_park_area.base;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.project.parkinglot.builder.UserEntityBuilder;

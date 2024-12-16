@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.repository;
 
-import org.team_project.uni_lodz_park_area.model.entity.ParkingAreaEntity;
+import com.project.parkinglot.model.entity.ParkingAreaEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

@@ -1,4 +1,4 @@
-package com.project.parkinglot.base;
+package org.team_project.uni_lodz_park_area.base;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.springframework.test.context.DynamicPropertyRegistry;

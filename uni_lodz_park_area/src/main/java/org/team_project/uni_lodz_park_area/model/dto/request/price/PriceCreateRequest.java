@@ -1,4 +1,4 @@
-package com.project.parkinglot.model.dto.request.price;
+package org.team_project.uni_lodz_park_area.model.dto.request.price;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;

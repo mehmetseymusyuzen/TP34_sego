@@ -1,4 +1,4 @@
-package org.team_project.uni_lodz_park_area.model.mapper.parking_area.
+package org.team_project.uni_lodz_park_area.model.mapper.parking_area;
 
 import com.project.parkinglot.model.dto.request.parking_area.ParkingAreaCreateRequest;
 import com.project.parkinglot.model.entity.ParkingAreaEntity;

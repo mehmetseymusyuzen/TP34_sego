@@ -1,4 +1,4 @@
-package com.project.parkinglot.controller;
+package org.team_project.uni_lodz_park_area.controller;
 
 import com.project.parkinglot.model.dto.request.park.ParkCheckInRequest;
 import com.project.parkinglot.model.dto.request.park.ParkCheckOutRequest;

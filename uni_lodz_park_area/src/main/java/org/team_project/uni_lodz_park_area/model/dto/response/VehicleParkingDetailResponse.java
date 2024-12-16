@@ -1,7 +1,11 @@
 package org.team_project.uni_lodz_park_area.model.dto.response;
 
 import com.project.parkinglot.common.model.BaseDomainModel;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
 import java.util.List;
@@ -18,6 +22,6 @@ import java.util.List;
 public class VehicleParkingDetailResponse extends BaseDomainModel {
 
     private String licensePlate;
-    private List<com.project.parkinglot.model.dto.response.ParkDetailResponse> parkDetails;
+    private List<ParkDetailResponse> parkDetails;
 
 }

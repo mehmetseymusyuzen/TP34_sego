@@ -1,4 +1,4 @@
-package com.project.parkinglot.exception.pricelist;
+package org.team_project.uni_lodz_park_area.exception.pricelist;
 
 import com.project.parkinglot.exception.NotFoundException;
 

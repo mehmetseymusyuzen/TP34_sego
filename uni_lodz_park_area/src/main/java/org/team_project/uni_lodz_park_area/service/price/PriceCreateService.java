@@ -1,4 +1,4 @@
-package com.project.parkinglot.service.price;
+package org.team_project.uni_lodz_park_area.service.price;
 
 import com.project.parkinglot.model.Price;
 import com.project.parkinglot.model.PriceList;
@@ -7,8 +7,7 @@ import com.project.parkinglot.model.dto.request.price.PriceCreateRequest;
 /**
  * Service interface named {@link PriceCreateService} for creating a price.
  */
-public interface git add .
-PriceCreateService {
+public interface PriceCreateService {
 
     /**
      * Creates a new price.

@@ -1,4 +1,4 @@
-package com.project.parkinglot.service.price.impl;
+package org.team_project.uni_lodz_park_area.service.price.impl;
 
 import com.project.parkinglot.model.Price;
 import com.project.parkinglot.model.PriceList;

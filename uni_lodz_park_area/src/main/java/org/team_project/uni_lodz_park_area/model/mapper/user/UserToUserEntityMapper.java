@@ -1,4 +1,4 @@
-package com.project.parkinglot.model.mapper.user;
+package org.team_project.uni_lodz_park_area.model.mapper.user;
 
 import com.project.parkinglot.model.User;
 import com.project.parkinglot.model.mapper.BaseMapper;

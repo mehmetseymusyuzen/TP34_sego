@@ -1,4 +1,4 @@
-package com.project.parkinglot.builder;
+package org.team_project.uni_lodz_park_area.builder;
 
 import com.project.parkinglot.model.entity.VehicleEntity;
 import com.project.parkinglot.security.model.entity.UserEntity;

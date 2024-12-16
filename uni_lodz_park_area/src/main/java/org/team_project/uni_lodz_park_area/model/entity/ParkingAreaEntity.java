@@ -1,6 +1,5 @@
 package org.team_project.uni_lodz_park_area.model.entity;
 
-import org.team_project.uni_lodz_park_area.common.model.entity.BaseEntity;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

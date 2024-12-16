@@ -1,4 +1,4 @@
-package com.project.parkinglot.model.mapper.park;
+package org.team_project.uni_lodz_park_area.model.mapper.park;
 
 import com.project.parkinglot.model.dto.response.ParkDetailResponse;
 import com.project.parkinglot.model.entity.ParkEntity;

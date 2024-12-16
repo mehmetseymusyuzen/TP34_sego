@@ -1,8 +1,8 @@
 package org.team_project.uni_lodz_park_area.model.mapper.priceList;
 
-import org.team_project.uni_lodz_park_area.model.PriceList;
-import org.team_project.uni_lodz_park_area.model.entity.PriceListEntity;
-import org.team_project.uni_lodz_park_area.model.mapper.price.PriceMapper;
+import com.project.parkinglot.model.PriceList;
+import com.project.parkinglot.model.entity.PriceListEntity;
+import com.project.parkinglot.model.mapper.price.PriceMapper;
 
 /**
  * Mapper class named {@link PriceListMapper} to map between {@link PriceList} and {@link PriceListEntity}.

@@ -1,4 +1,4 @@
-package com.project.parkinglot.service.park.impl;
+package org.team_project.uni_lodz_park_area.service.park.impl;
 
 import com.project.parkinglot.exception.parkingarea.ParkingAreaCapacityException;
 import com.project.parkinglot.exception.parkingarea.ParkingAreaNotFoundException;

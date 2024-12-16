@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.model.dto.request.priceList;
 
-import org.team_project.uni_lodz_park_area.model.dto.request.priceList.PriceListCreateRequest;
+import com.project.parkinglot.model.dto.request.price.PriceCreateRequest;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

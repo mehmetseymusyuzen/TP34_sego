@@ -1,8 +1,11 @@
-package com.project.parkinglot.model;
+package org.team_project.uni_lodz_park_area.model;
 
-import com.project.parkinglot.common.model.BaseDomainModel;
 import com.project.parkinglot.model.enums.ParkStatus;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
 import java.math.BigDecimal;

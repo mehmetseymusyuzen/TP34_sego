@@ -1,4 +1,4 @@
-package com.project.parkinglot.repository;
+package org.team_project.uni_lodz_park_area.repository;
 
 import com.project.parkinglot.model.entity.ParkEntity;
 import com.project.parkinglot.model.entity.ParkingAreaEntity;

@@ -1,5 +1,6 @@
 package org.team_project.uni_lodz_park_area.model.dto.request.parking_area;
 
+
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;

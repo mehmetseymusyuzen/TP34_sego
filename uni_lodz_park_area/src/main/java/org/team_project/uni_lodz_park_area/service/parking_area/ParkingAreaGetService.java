@@ -1,7 +1,7 @@
 package org.team_project.uni_lodz_park_area.service.parking_area;
 
-import org.team_project.uni_lodz_park_area.model.ParkingArea;
-import org.team_project.uni_lodz_park_area.model.dto.response.parkingarea.ParkingAreaIncomeResponse;
+import com.project.parkinglot.model.ParkingArea;
+import com.project.parkinglot.model.dto.response.parkingarea.ParkingAreaIncomeResponse;
 
 import java.time.LocalDate;
 

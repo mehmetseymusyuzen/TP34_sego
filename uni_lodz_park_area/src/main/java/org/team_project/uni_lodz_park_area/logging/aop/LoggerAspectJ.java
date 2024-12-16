@@ -1,4 +1,4 @@
-package com.project.parkinglot.logging.aop;
+package org.team_project.uni_lodz_park_area.logging.aop;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

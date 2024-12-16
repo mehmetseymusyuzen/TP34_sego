@@ -1,4 +1,4 @@
-package com.project.parkinglot.builder;
+package org.team_project.uni_lodz_park_area.builder;
 
 import com.github.javafaker.Faker;
 import com.project.parkinglot.model.dto.request.price.PriceCreateRequest;

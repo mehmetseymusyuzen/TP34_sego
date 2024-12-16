@@ -1,4 +1,4 @@
-package com.project.parkinglot.logging.service.impl;
+package org.team_project.uni_lodz_park_area.logging.service.impl;
 
 import com.project.parkinglot.logging.entity.LogEntity;
 import com.project.parkinglot.logging.repository.LogRepository;

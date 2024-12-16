@@ -1,4 +1,4 @@
-package com.project.parkinglot.exception.park;
+package org.team_project.uni_lodz_park_area.exception.park;
 
 import com.project.parkinglot.exception.NotFoundException;
 
