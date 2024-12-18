@@ -13,11 +13,11 @@ import io.swagger.v3.oas.annotations.security.SecurityScheme;
 @OpenAPIDefinition(
         info = @Info(
                 contact = @Contact(
-                        name = "Sercan Noyan Germiyanoğlu | Mehmet Şeymus Yüzen | Harun Yusuf Ekşioğlu | Muhammet Oğuzhan Aydoğan",
-                        url = "https://github.com/Rapter1990/parkinglot/"
+                        name = "Mehmet Yuzen | Mustafa Capras | Michał Małagowski | Mykola Horbenko | Veronika Kobets | Buse Iyigun | Dongchen Luo | Ravshanjon Muminov",
+                        url = "https://github.com/mehmetseymusyuzen/TP34_sego/"
                 ),
-                description = "Case Study - Parking Lot " +
-                        "(Spring Boot, Spring Security , Mysql, JUnit, Integration Test, Docker, Test Container, AOP, Prometheus, Grafana) ",
+                description = "University of Lodz Park Area " +
+                        "University of Lodz Park Area is a Spring Boot application covering important and useful features related to managing parking areas, park check-ins and check-outs for drivers, user management, and vehicle management. ",
                 title = "Parking Lot App API",
                 version = "1.0.0"
         )
