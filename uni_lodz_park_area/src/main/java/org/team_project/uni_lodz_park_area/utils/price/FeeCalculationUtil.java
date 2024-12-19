@@ -1,10 +1,10 @@
 package org.team_project.uni_lodz_park_area.utils.price;
 
-import com.project.parkinglot.exception.pricelist.PriceListNotFoundException;
-import com.project.parkinglot.model.entity.ParkEntity;
-import com.project.parkinglot.model.entity.PriceEntity;
-import com.project.parkinglot.model.entity.PriceListEntity;
-import com.project.parkinglot.model.enums.VehicleType;
+import org.team_project.uni_lodz_park_area.exception.pricelist.PriceListNotFoundException;
+import org.team_project.uni_lodz_park_area.model.entity.ParkEntity;
+import org.team_project.uni_lodz_park_area.model.entity.PriceEntity;
+import org.team_project.uni_lodz_park_area.model.entity.PriceListEntity;
+import org.team_project.uni_lodz_park_area.model.enums.VehicleType;
 import lombok.experimental.UtilityClass;
 
 import java.math.BigDecimal;

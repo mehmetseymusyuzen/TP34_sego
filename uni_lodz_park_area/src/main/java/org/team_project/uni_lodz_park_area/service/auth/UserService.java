@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.service.auth;
 
-import com.project.parkinglot.security.model.entity.UserEntity;
+import org.team_project.uni_lodz_park_area.security.model.entity.UserEntity;
 
 import java.util.Optional;
 

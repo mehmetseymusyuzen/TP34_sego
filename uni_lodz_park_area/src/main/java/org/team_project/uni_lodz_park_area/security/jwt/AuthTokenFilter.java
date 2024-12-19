@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.security.jwt;
 
-import com.project.parkinglot.security.CustomUserDetailsService;
+import org.team_project.uni_lodz_park_area.security.CustomUserDetailsService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

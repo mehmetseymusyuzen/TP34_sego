@@ -1,7 +1,7 @@
 package org.team_project.uni_lodz_park_area.service.priceList;
 
-import com.project.parkinglot.model.PriceList;
-import com.project.parkinglot.model.dto.request.priceList.PriceListCreateRequest;
+import org.team_project.uni_lodz_park_area.model.PriceList;
+import org.team_project.uni_lodz_park_area.model.dto.request.priceList.PriceListCreateRequest;
 
 /**
  * Service interface named {@link PriceListCreateService} for creating a price list.

@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.model.entity;
 
-import com.project.parkinglot.model.enums.ParkStatus;
+import org.team_project.uni_lodz_park_area.model.enums.ParkStatus;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

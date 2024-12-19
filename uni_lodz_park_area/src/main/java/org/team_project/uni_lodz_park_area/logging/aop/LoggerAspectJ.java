@@ -2,10 +2,10 @@ package org.team_project.uni_lodz_park_area.logging.aop;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.project.parkinglot.exception.AlreadyException;
-import com.project.parkinglot.exception.NotFoundException;
-import com.project.parkinglot.logging.entity.LogEntity;
-import com.project.parkinglot.logging.service.LogService;
+import org.team_project.uni_lodz_park_area.exception.AlreadyException;
+import org.team_project.uni_lodz_park_area.exception.NotFoundException;
+import org.team_project.uni_lodz_park_area.logging.entity.LogEntity;
+import org.team_project.uni_lodz_park_area.logging.service.LogService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;

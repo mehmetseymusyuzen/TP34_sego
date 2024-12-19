@@ -1,8 +1,8 @@
 package org.team_project.uni_lodz_park_area.controller;
 
-import com.project.parkinglot.model.User;
-import com.project.parkinglot.payload.response.CustomResponse;
-import com.project.parkinglot.service.user.UserGetService;
+import org.team_project.uni_lodz_park_area.model.User;
+import org.team_project.uni_lodz_park_area.payload.response.CustomResponse;
+import org.team_project.uni_lodz_park_area.service.user.UserGetService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

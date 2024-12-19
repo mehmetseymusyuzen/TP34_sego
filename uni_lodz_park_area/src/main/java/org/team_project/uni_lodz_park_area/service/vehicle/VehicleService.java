@@ -1,9 +1,9 @@
 package org.team_project.uni_lodz_park_area.service.vehicle;
 
-import com.project.parkinglot.model.Vehicle;
-import com.project.parkinglot.model.dto.request.vehicle.VehicleRequest;
-import com.project.parkinglot.model.dto.response.VehicleParkingDetailResponse;
-import com.project.parkinglot.model.entity.VehicleEntity;
+import org.team_project.uni_lodz_park_area.model.Vehicle;
+import org.team_project.uni_lodz_park_area.model.dto.request.vehicle.VehicleRequest;
+import org.team_project.uni_lodz_park_area.model.dto.response.VehicleParkingDetailResponse;
+import org.team_project.uni_lodz_park_area.model.entity.VehicleEntity;
 
 /**
  * Service interface named {@link VehicleService} for managing vehicles.

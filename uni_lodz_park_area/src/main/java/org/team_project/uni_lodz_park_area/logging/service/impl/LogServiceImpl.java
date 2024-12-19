@@ -1,8 +1,8 @@
 package org.team_project.uni_lodz_park_area.logging.service.impl;
 
-import com.project.parkinglot.logging.entity.LogEntity;
-import com.project.parkinglot.logging.repository.LogRepository;
-import com.project.parkinglot.logging.service.LogService;
+import org.team_project.uni_lodz_park_area.logging.entity.LogEntity;
+import org.team_project.uni_lodz_park_area.logging.repository.LogRepository;
+import org.team_project.uni_lodz_park_area.logging.service.LogService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,9 +1,9 @@
 package org.team_project.uni_lodz_park_area.builder;
 
-import com.project.parkinglot.model.Park;
-import com.project.parkinglot.model.ParkingArea;
-import com.project.parkinglot.model.Vehicle;
-import com.project.parkinglot.model.enums.ParkStatus;
+import org.team_project.uni_lodz_park_area.model.Park;
+import org.team_project.uni_lodz_park_area.model.ParkingArea;
+import org.team_project.uni_lodz_park_area.model.Vehicle;
+import org.team_project.uni_lodz_park_area.model.enums.ParkStatus;
 
 import java.util.UUID;
 

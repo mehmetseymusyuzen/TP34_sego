@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.payload.request.auth;
 
-import com.project.parkinglot.security.model.enums.Role;
+import org.team_project.uni_lodz_park_area.security.model.enums.Role;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

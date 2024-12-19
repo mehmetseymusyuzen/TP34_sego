@@ -1,12 +1,12 @@
 package org.team_project.uni_lodz_park_area.controller;
 
-import com.project.parkinglot.payload.request.auth.LoginRequest;
-import com.project.parkinglot.payload.request.auth.SignupRequest;
-import com.project.parkinglot.payload.request.auth.TokenRefreshRequest;
-import com.project.parkinglot.payload.response.CustomResponse;
-import com.project.parkinglot.payload.response.auth.JWTResponse;
-import com.project.parkinglot.payload.response.auth.TokenRefreshResponse;
-import com.project.parkinglot.service.auth.AuthService;
+import org.team_project.uni_lodz_park_area.payload.request.auth.LoginRequest;
+import org.team_project.uni_lodz_park_area.payload.request.auth.SignupRequest;
+import org.team_project.uni_lodz_park_area.payload.request.auth.TokenRefreshRequest;
+import org.team_project.uni_lodz_park_area.payload.response.CustomResponse;
+import org.team_project.uni_lodz_park_area.payload.response.auth.JWTResponse;
+import org.team_project.uni_lodz_park_area.payload.response.auth.TokenRefreshResponse;
+import org.team_project.uni_lodz_park_area.service.auth.AuthService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

@@ -1,8 +1,8 @@
 package org.team_project.uni_lodz_park_area.security.model.entity;
 
-import com.project.parkinglot.model.entity.VehicleEntity;
-import com.project.parkinglot.security.model.enums.Role;
-import com.project.parkinglot.security.model.enums.TokenClaims;
+import org.team_project.uni_lodz_park_area.model.entity.VehicleEntity;
+import org.team_project.uni_lodz_park_area.security.model.enums.Role;
+import org.team_project.uni_lodz_park_area.security.model.enums.TokenClaims;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

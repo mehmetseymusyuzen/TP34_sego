@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.model.entity;
 
-import com.project.parkinglot.security.CustomUserDetails;
+import org.team_project.uni_lodz_park_area.security.CustomUserDetails;
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.PrePersist;

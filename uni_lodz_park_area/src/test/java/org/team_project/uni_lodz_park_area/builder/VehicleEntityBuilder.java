@@ -1,9 +1,9 @@
 package org.team_project.uni_lodz_park_area.builder;
 
 import com.github.javafaker.Faker;
-import com.project.parkinglot.model.entity.VehicleEntity;
-import com.project.parkinglot.model.enums.VehicleType;
-import com.project.parkinglot.security.model.entity.UserEntity;
+import org.team_project.uni_lodz_park_area.model.entity.VehicleEntity;
+import org.team_project.uni_lodz_park_area.model.enums.VehicleType;
+import org.team_project.uni_lodz_park_area.security.model.entity.UserEntity;
 
 import java.util.Random;
 import java.util.UUID;

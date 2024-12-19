@@ -1,15 +1,15 @@
 package org.team_project.uni_lodz_park_area.exception;
 
-import com.project.parkinglot.exception.park.ParkNotFoundException;
-import com.project.parkinglot.exception.parkingarea.ParkingAreaAlreadyExistException;
-import com.project.parkinglot.exception.parkingarea.ParkingAreaCapacityCanNotBeNullException;
-import com.project.parkinglot.exception.parkingarea.ParkingAreaNotFoundException;
-import com.project.parkinglot.exception.pricelist.PriceListNotFoundException;
-import com.project.parkinglot.exception.user.EmailAlreadyExistsException;
-import com.project.parkinglot.exception.user.RefreshTokenNotFoundException;
-import com.project.parkinglot.exception.user.UserNotFoundException;
-import com.project.parkinglot.exception.vehicle.VehicleAlreadyExist;
-import com.project.parkinglot.payload.response.ErrorResponse;
+import org.team_project.uni_lodz_park_area.exception.park.ParkNotFoundException;
+import org.team_project.uni_lodz_park_area.exception.parkingarea.ParkingAreaAlreadyExistException;
+import org.team_project.uni_lodz_park_area.exception.parkingarea.ParkingAreaCapacityCanNotBeNullException;
+import org.team_project.uni_lodz_park_area.exception.parkingarea.ParkingAreaNotFoundException;
+import org.team_project.uni_lodz_park_area.exception.pricelist.PriceListNotFoundException;
+import org.team_project.uni_lodz_park_area.exception.user.EmailAlreadyExistsException;
+import org.team_project.uni_lodz_park_area.exception.user.RefreshTokenNotFoundException;
+import org.team_project.uni_lodz_park_area.exception.user.UserNotFoundException;
+import org.team_project.uni_lodz_park_area.exception.vehicle.VehicleAlreadyExist;
+import org.team_project.uni_lodz_park_area.payload.response.ErrorResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.model.dto.request.park;
 
-import com.project.parkinglot.model.dto.request.vehicle.VehicleRequest;
+import org.team_project.uni_lodz_park_area.model.dto.request.vehicle.VehicleRequest;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;

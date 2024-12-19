@@ -1,15 +1,15 @@
 package org.team_project.uni_lodz_park_area.controller;
 
-import com.project.parkinglot.base.BaseControllerTest;
-import com.project.parkinglot.payload.request.auth.LoginRequest;
-import com.project.parkinglot.payload.request.auth.SignupRequest;
-import com.project.parkinglot.payload.request.auth.TokenRefreshRequest;
-import com.project.parkinglot.payload.response.auth.JWTResponse;
-import com.project.parkinglot.payload.response.auth.TokenRefreshResponse;
-import com.project.parkinglot.security.CustomUserDetails;
-import com.project.parkinglot.security.model.entity.UserEntity;
-import com.project.parkinglot.security.model.enums.Role;
-import com.project.parkinglot.service.auth.impl.AuthServiceImpl;
+import org.team_project.uni_lodz_park_area.base.BaseControllerTest;
+import org.team_project.uni_lodz_park_area.payload.request.auth.LoginRequest;
+import org.team_project.uni_lodz_park_area.payload.request.auth.SignupRequest;
+import org.team_project.uni_lodz_park_area.payload.request.auth.TokenRefreshRequest;
+import org.team_project.uni_lodz_park_area.payload.response.auth.JWTResponse;
+import org.team_project.uni_lodz_park_area.payload.response.auth.TokenRefreshResponse;
+import org.team_project.uni_lodz_park_area.security.CustomUserDetails;
+import org.team_project.uni_lodz_park_area.security.model.entity.UserEntity;
+import org.team_project.uni_lodz_park_area.security.model.enums.Role;
+import org.team_project.uni_lodz_park_area.service.auth.impl.AuthServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.boot.test.mock.mockito.MockBean;

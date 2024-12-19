@@ -1,9 +1,9 @@
 package org.team_project.uni_lodz_park_area.config;
 
-import com.project.parkinglot.security.CustomUserDetailsService;
-import com.project.parkinglot.security.jwt.AuthEntryPointJwt;
-import com.project.parkinglot.security.jwt.AuthTokenFilter;
-import com.project.parkinglot.security.jwt.JwtUtils;
+import org.team_project.uni_lodz_park_area.security.CustomUserDetailsService;
+import org.team_project.uni_lodz_park_area.security.jwt.AuthEntryPointJwt;
+import org.team_project.uni_lodz_park_area.security.jwt.AuthTokenFilter;
+import org.team_project.uni_lodz_park_area.security.jwt.JwtUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

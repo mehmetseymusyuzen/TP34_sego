@@ -1,7 +1,7 @@
 package org.team_project.uni_lodz_park_area.security;
 
-import com.project.parkinglot.security.model.entity.UserEntity;
-import com.project.parkinglot.service.auth.UserService;
+import org.team_project.uni_lodz_park_area.security.model.entity.UserEntity;
+import org.team_project.uni_lodz_park_area.service.auth.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

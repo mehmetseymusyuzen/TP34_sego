@@ -1,11 +1,11 @@
 package org.team_project.uni_lodz_park_area.service.auth.impl;
 
-import com.project.parkinglot.exception.user.UserNotFoundException;
-import com.project.parkinglot.security.model.entity.RefreshToken;
-import com.project.parkinglot.security.model.entity.UserEntity;
-import com.project.parkinglot.security.repository.RefreshTokenRepository;
-import com.project.parkinglot.service.auth.RefreshTokenService;
-import com.project.parkinglot.service.auth.UserService;
+import org.team_project.uni_lodz_park_area.exception.user.UserNotFoundException;
+import org.team_project.uni_lodz_park_area.security.model.entity.RefreshToken;
+import org.team_project.uni_lodz_park_area.security.model.entity.UserEntity;
+import org.team_project.uni_lodz_park_area.security.repository.RefreshTokenRepository;
+import org.team_project.uni_lodz_park_area.service.auth.RefreshTokenService;
+import org.team_project.uni_lodz_park_area.service.auth.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

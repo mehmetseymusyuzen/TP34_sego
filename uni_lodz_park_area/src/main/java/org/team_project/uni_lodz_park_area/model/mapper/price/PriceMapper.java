@@ -1,7 +1,7 @@
 package org.team_project.uni_lodz_park_area.model.mapper.price;
 
-import com.project.parkinglot.model.Price;
-import com.project.parkinglot.model.entity.PriceEntity;
+import org.team_project.uni_lodz_park_area.model.Price;
+import org.team_project.uni_lodz_park_area.model.entity.PriceEntity;
 
 /**
  * Mapper class named {@link PriceMapper} to map {@link PriceEntity} to {@link Price}.

@@ -1,9 +1,9 @@
 package org.team_project.uni_lodz_park_area.repository;
 
-import com.project.parkinglot.model.entity.ParkEntity;
-import com.project.parkinglot.model.entity.ParkingAreaEntity;
-import com.project.parkinglot.model.entity.VehicleEntity;
-import com.project.parkinglot.model.enums.ParkStatus;
+import org.team_project.uni_lodz_park_area.model.entity.ParkEntity;
+import org.team_project.uni_lodz_park_area.model.entity.ParkingAreaEntity;
+import org.team_project.uni_lodz_park_area.model.entity.VehicleEntity;
+import org.team_project.uni_lodz_park_area.model.enums.ParkStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

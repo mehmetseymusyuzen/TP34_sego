@@ -1,11 +1,11 @@
 package org.team_project.uni_lodz_park_area.controller;
 
-import com.project.parkinglot.model.dto.request.park.ParkCheckInRequest;
-import com.project.parkinglot.model.dto.request.park.ParkCheckOutRequest;
-import com.project.parkinglot.model.dto.response.park.ParkCheckInResponse;
-import com.project.parkinglot.model.dto.response.park.ParkCheckOutResponse;
-import com.project.parkinglot.payload.response.CustomResponse;
-import com.project.parkinglot.service.park.ParkService;
+import org.team_project.uni_lodz_park_area.model.dto.request.park.ParkCheckInRequest;
+import org.team_project.uni_lodz_park_area.model.dto.request.park.ParkCheckOutRequest;
+import org.team_project.uni_lodz_park_area.model.dto.response.park.ParkCheckInResponse;
+import org.team_project.uni_lodz_park_area.model.dto.response.park.ParkCheckOutResponse;
+import org.team_project.uni_lodz_park_area.payload.response.CustomResponse;
+import org.team_project.uni_lodz_park_area.service.park.ParkService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

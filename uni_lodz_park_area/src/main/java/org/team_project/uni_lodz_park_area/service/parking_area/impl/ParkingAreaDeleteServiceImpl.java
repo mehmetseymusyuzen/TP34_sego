@@ -1,9 +1,9 @@
 package org.team_project.uni_lodz_park_area.service.parking_area.impl;
 
-import com.project.parkinglot.exception.parkingarea.ParkingAreaNotFoundException;
-import com.project.parkinglot.model.entity.ParkingAreaEntity;
-import com.project.parkinglot.repository.ParkingAreaRepository;
-import com.project.parkinglot.service.parking_area.ParkingAreaDeleteService;
+import org.team_project.uni_lodz_park_area.exception.parking_area.ParkingAreaNotFoundException;
+import org.team_project.uni_lodz_park_area.model.entity.ParkingAreaEntity;
+import org.team_project.uni_lodz_park_area.repository.ParkingAreaRepository;
+import org.team_project.uni_lodz_park_area.service.parking_area.ParkingAreaDeleteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

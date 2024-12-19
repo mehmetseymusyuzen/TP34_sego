@@ -1,8 +1,8 @@
 package org.team_project.uni_lodz_park_area.model.mapper.vehicle;
 
-import com.project.parkinglot.model.Vehicle;
-import com.project.parkinglot.model.dto.request.vehicle.VehicleRequest;
-import com.project.parkinglot.model.mapper.BaseMapper;
+import org.team_project.uni_lodz_park_area.model.Vehicle;
+import org.team_project.uni_lodz_park_area.model.dto.request.vehicle.VehicleRequest;
+import org.team_project.uni_lodz_park_area.model.mapper.BaseMapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

@@ -1,13 +1,13 @@
 package org.team_project.uni_lodz_park_area.base;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.project.parkinglot.builder.UserEntityBuilder;
-import com.project.parkinglot.logging.entity.LogEntity;
-import com.project.parkinglot.logging.service.impl.LogServiceImpl;
-import com.project.parkinglot.security.CustomUserDetails;
-import com.project.parkinglot.security.CustomUserDetailsService;
-import com.project.parkinglot.security.jwt.JwtUtils;
-import com.project.parkinglot.security.model.entity.UserEntity;
+import org.team_project.uni_lodz_park_area.builder.UserEntityBuilder;
+import org.team_project.uni_lodz_park_area.logging.entity.LogEntity;
+import org.team_project.uni_lodz_park_area.logging.service.impl.LogServiceImpl;
+import org.team_project.uni_lodz_park_area.security.CustomUserDetails;
+import org.team_project.uni_lodz_park_area.security.CustomUserDetailsService;
+import org.team_project.uni_lodz_park_area.security.jwt.JwtUtils;
+import org.team_project.uni_lodz_park_area.security.model.entity.UserEntity;
 import org.junit.jupiter.api.BeforeEach;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;

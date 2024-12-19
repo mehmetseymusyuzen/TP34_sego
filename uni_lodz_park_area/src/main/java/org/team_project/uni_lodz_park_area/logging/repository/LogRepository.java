@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.logging.repository;
 
-import com.project.parkinglot.logging.entity.LogEntity;
+import org.team_project.uni_lodz_park_area.logging.entity.LogEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

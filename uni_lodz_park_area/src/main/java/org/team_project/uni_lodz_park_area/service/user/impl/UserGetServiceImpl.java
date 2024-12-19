@@ -1,11 +1,11 @@
 package org.team_project.uni_lodz_park_area.service.user.impl;
 
-import com.project.parkinglot.exception.user.UserNotFoundException;
-import com.project.parkinglot.model.User;
-import com.project.parkinglot.model.mapper.user.UserEntityToUserMapper;
-import com.project.parkinglot.security.model.entity.UserEntity;
-import com.project.parkinglot.service.auth.UserService;
-import com.project.parkinglot.service.user.UserGetService;
+import org.team_project.uni_lodz_park_area.exception.user.UserNotFoundException;
+import org.team_project.uni_lodz_park_area.model.User;
+import org.team_project.uni_lodz_park_area.model.mapper.user.UserEntityToUserMapper;
+import org.team_project.uni_lodz_park_area.security.model.entity.UserEntity;
+import org.team_project.uni_lodz_park_area.service.auth.UserService;
+import org.team_project.uni_lodz_park_area.service.user.UserGetService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

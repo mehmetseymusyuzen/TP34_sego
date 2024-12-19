@@ -1,14 +1,14 @@
 package org.team_project.uni_lodz_park_area.service.parking_area.impl;
 
-import com.project.parkinglot.exception.parkingarea.DailyIncomeException;
-import com.project.parkinglot.exception.parkingarea.InvalidDateException;
-import com.project.parkinglot.exception.parkingarea.ParkingAreaNotFoundException;
-import com.project.parkinglot.model.ParkingArea;
-import com.project.parkinglot.model.dto.response.parkingarea.ParkingAreaIncomeResponse;
-import com.project.parkinglot.model.entity.ParkingAreaEntity;
-import com.project.parkinglot.model.mapper.parking_area.ParkingAreaEntityToParkingAreaMapper;
-import com.project.parkinglot.repository.ParkingAreaRepository;
-import com.project.parkinglot.service.parking_area.ParkingAreaGetService;
+import org.team_project.uni_lodz_park_area.exception.parking_area.DailyIncomeException;
+import org.team_project.uni_lodz_park_area.exception.parking_area.InvalidDateException;
+import org.team_project.uni_lodz_park_area.exception.parking_area.ParkingAreaNotFoundException;
+import org.team_project.uni_lodz_park_area.model.ParkingArea;
+import org.team_project.uni_lodz_park_area.model.dto.response.parkingarea.ParkingAreaIncomeResponse;
+import org.team_project.uni_lodz_park_area.model.entity.ParkingAreaEntity;
+import org.team_project.uni_lodz_park_area.model.mapper.parking_area.ParkingAreaEntityToParkingAreaMapper;
+import org.team_project.uni_lodz_park_area.repository.ParkingAreaRepository;
+import org.team_project.uni_lodz_park_area.service.parking_area.ParkingAreaGetService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -70,19 +70,19 @@ class ParkingAreaGetServiceImpl implements ParkingAreaGetService {
     @Override
     public ParkingAreaIncomeResponse getDailyIncome(final LocalDate date, final String parkingAreaId) {
 
-       ParkingAreaEntity parkingAreaEntity = parkingAreaRepository
+        ParkingAreaEntity parkingAreaEntity = parkingAreaRepository
                 .findById(parkingAreaId)
                 .orElseThrow(ParkingAreaNotFoundException::new);
 
         isGivenDateAfterCurrentDate(date);
 
-         BigDecimal calculatedIncome=parkingAreaRepository.calculateDailyIncome(date, parkingAreaId)
+        BigDecimal calculatedIncome=parkingAreaRepository.calculateDailyIncome(date, parkingAreaId)
                 .orElseThrow(DailyIncomeException::new);
 
-         return ParkingAreaIncomeResponse.builder()
-                 .income(calculatedIncome)
-                 .name(parkingAreaEntity.getName())
-                 .build();
+        return ParkingAreaIncomeResponse.builder()
+                .income(calculatedIncome)
+                .name(parkingAreaEntity.getName())
+                .build();
     }
 
     /**

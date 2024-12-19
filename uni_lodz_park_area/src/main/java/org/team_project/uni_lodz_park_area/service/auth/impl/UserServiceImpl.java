@@ -1,8 +1,8 @@
 package org.team_project.uni_lodz_park_area.service.auth.impl;
 
-import com.project.parkinglot.security.model.entity.UserEntity;
-import com.project.parkinglot.security.repository.UserRepository;
-import com.project.parkinglot.service.auth.UserService;
+import org.team_project.uni_lodz_park_area.security.model.entity.UserEntity;
+import org.team_project.uni_lodz_park_area.security.repository.UserRepository;
+import org.team_project.uni_lodz_park_area.service.auth.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

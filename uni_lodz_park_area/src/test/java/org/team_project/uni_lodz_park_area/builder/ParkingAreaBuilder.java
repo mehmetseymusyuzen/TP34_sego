@@ -1,9 +1,9 @@
 package org.team_project.uni_lodz_park_area.builder;
 
 import com.github.javafaker.Faker;
-import com.project.parkinglot.model.Park;
-import com.project.parkinglot.model.ParkingArea;
-import com.project.parkinglot.model.PriceList;
+import org.team_project.uni_lodz_park_area.model.Park;
+import org.team_project.uni_lodz_park_area.model.ParkingArea;
+import org.team_project.uni_lodz_park_area.model.PriceList;
 
 import java.util.List;
 import java.util.UUID;

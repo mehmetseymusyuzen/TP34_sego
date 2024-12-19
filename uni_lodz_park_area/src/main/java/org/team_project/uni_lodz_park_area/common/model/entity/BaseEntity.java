@@ -1,6 +1,5 @@
 package org.team_project.uni_lodz_park_area.common.model.entity;
 
-import com.project.parkinglot.security.CustomUserDetails;
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.PrePersist;
@@ -12,6 +11,7 @@ import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.team_project.uni_lodz_park_area.security.CustomUserDetails;
 
 import java.time.LocalDateTime;
 

@@ -1,8 +1,8 @@
 package org.team_project.uni_lodz_park_area.builder;
 
 import com.github.javafaker.Faker;
-import com.project.parkinglot.model.dto.request.park.ParkCheckOutRequest;
-import com.project.parkinglot.model.dto.request.vehicle.VehicleRequest;
+import org.team_project.uni_lodz_park_area.model.dto.request.park.ParkCheckOutRequest;
+import org.team_project.uni_lodz_park_area.model.dto.request.vehicle.VehicleRequest;
 
 public class ParkCheckOutRequestBuilder extends BaseBuilder<ParkCheckOutRequest> {
 

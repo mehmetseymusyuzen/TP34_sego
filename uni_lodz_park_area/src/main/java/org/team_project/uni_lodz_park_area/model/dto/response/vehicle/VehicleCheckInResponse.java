@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.model.dto.response.vehicle;
 
-import com.project.parkinglot.model.enums.VehicleType;
+import org.team_project.uni_lodz_park_area.model.enums.VehicleType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

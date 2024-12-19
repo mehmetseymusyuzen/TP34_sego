@@ -1,7 +1,9 @@
 package org.team_project.uni_lodz_park_area.model.mapper;
 
-import com.project.parkinglot.common.model.BaseDomainModel;
-import com.project.parkinglot.model.enums.VehicleType;
+import org.team_project.uni_lodz_park_area.common.model.BaseDomainModel;
+import org.team_project.uni_lodz_park_area.model.Park;
+import org.team_project.uni_lodz_park_area.model.User;
+import org.team_project.uni_lodz_park_area.model.enums.VehicleType;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
@@ -21,7 +23,7 @@ public class Vehicle extends BaseDomainModel {
     private String id;
     private String licensePlate;
     private VehicleType vehicleType;
-    private List<com.project.parkinglot.model.Park> parkList;
+    private List<Park> parkList;
     private User user;
 
 }

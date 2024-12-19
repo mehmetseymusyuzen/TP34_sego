@@ -1,8 +1,8 @@
 package org.team_project.uni_lodz_park_area.model.mapper.parking_area;
 
-import com.project.parkinglot.model.dto.request.parking_area.ParkingAreaCreateRequest;
-import com.project.parkinglot.model.entity.ParkingAreaEntity;
-import com.project.parkinglot.model.mapper.BaseMapper;
+import org.team_project.uni_lodz_park_area.model.dto.request.parking_area.ParkingAreaCreateRequest;
+import org.team_project.uni_lodz_park_area.model.entity.ParkingAreaEntity;
+import org.team_project.uni_lodz_park_area.model.mapper.BaseMapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;

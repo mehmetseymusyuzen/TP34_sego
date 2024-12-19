@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.model.dto.request.vehicle;
 
-import com.project.parkinglot.model.enums.VehicleType;
+import org.team_project.uni_lodz_park_area.model.enums.VehicleType;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;

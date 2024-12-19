@@ -1,11 +1,11 @@
 package org.team_project.uni_lodz_park_area.controller;
 
 
-import com.project.parkinglot.model.Vehicle;
-import com.project.parkinglot.model.dto.request.vehicle.VehicleRequest;
-import com.project.parkinglot.model.dto.response.VehicleParkingDetailResponse;
-import com.project.parkinglot.payload.response.CustomResponse;
-import com.project.parkinglot.service.vehicle.VehicleService;
+import org.team_project.uni_lodz_park_area.model.Vehicle;
+import org.team_project.uni_lodz_park_area.model.dto.request.vehicle.VehicleRequest;
+import org.team_project.uni_lodz_park_area.model.dto.response.VehicleParkingDetailResponse;
+import org.team_project.uni_lodz_park_area.payload.response.CustomResponse;
+import org.team_project.uni_lodz_park_area.service.vehicle.VehicleService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

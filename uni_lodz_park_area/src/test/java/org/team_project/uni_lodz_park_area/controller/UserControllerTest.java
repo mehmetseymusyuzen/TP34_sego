@@ -1,9 +1,9 @@
 package org.team_project.uni_lodz_park_area.controller;
 
-import com.project.parkinglot.base.BaseControllerTest;
-import com.project.parkinglot.builder.UserBuilder;
-import com.project.parkinglot.model.User;
-import com.project.parkinglot.service.user.UserGetService;
+import org.team_project.uni_lodz_park_area.base.BaseControllerTest;
+import org.team_project.uni_lodz_park_area.builder.UserBuilder;
+import org.team_project.uni_lodz_park_area.model.User;
+import org.team_project.uni_lodz_park_area.service.user.UserGetService;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

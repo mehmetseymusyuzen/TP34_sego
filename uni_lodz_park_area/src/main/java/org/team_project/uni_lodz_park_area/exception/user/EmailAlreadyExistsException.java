@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.exception.user;
 
-import com.project.parkinglot.exception.AlreadyException;
+import org.team_project.uni_lodz_park_area.exception.AlreadyException;
 
 import java.io.Serial;
 

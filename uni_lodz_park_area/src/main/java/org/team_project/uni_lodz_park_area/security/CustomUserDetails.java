@@ -1,11 +1,11 @@
 package org.team_project.uni_lodz_park_area.security;
 
-import com.project.parkinglot.security.model.entity.UserEntity;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.team_project.uni_lodz_park_area.security.model.entity.UserEntity;
 
 import java.io.Serial;
 import java.util.Collection;

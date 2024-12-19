@@ -1,14 +1,14 @@
 package org.team_project.uni_lodz_park_area.service.parking_area.impl;
 
-import com.project.parkinglot.base.BaseServiceTest;
-import com.project.parkinglot.builder.ParkingAreaEntityBuilder;
-import com.project.parkinglot.builder.ParkingAreaUpdateRequestBuilder;
-import com.project.parkinglot.exception.parkingarea.ParkingAreaNotFoundException;
-import com.project.parkinglot.model.ParkingArea;
-import com.project.parkinglot.model.dto.request.parking_area.ParkingAreaUpdateRequest;
-import com.project.parkinglot.model.entity.ParkingAreaEntity;
-import com.project.parkinglot.model.mapper.parking_area.ParkingAreaEntityToParkingAreaMapper;
-import com.project.parkinglot.repository.ParkingAreaRepository;
+import org.team_project.uni_lodz_park_area.base.BaseServiceTest;
+import org.team_project.uni_lodz_park_area.builder.ParkingAreaEntityBuilder;
+import org.team_project.uni_lodz_park_area.builder.ParkingAreaUpdateRequestBuilder;
+import org.team_project.uni_lodz_park_area.exception.parkingarea.ParkingAreaNotFoundException;
+import org.team_project.uni_lodz_park_area.model.ParkingArea;
+import org.team_project.uni_lodz_park_area.model.dto.request.parking_area.ParkingAreaUpdateRequest;
+import org.team_project.uni_lodz_park_area.model.entity.ParkingAreaEntity;
+import org.team_project.uni_lodz_park_area.model.mapper.parking_area.ParkingAreaEntityToParkingAreaMapper;
+import org.team_project.uni_lodz_park_area.repository.ParkingAreaRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

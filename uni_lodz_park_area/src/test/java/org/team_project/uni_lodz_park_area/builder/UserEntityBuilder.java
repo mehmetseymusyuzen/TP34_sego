@@ -1,9 +1,9 @@
 package org.team_project.uni_lodz_park_area.builder;
 
-import com.project.parkinglot.model.entity.VehicleEntity;
-import com.project.parkinglot.security.model.entity.UserEntity;
-import com.project.parkinglot.security.model.enums.Role;
-import com.project.parkinglot.utils.RandomUtil;
+import org.team_project.uni_lodz_park_area.model.entity.VehicleEntity;
+import org.team_project.uni_lodz_park_area.security.model.entity.UserEntity;
+import org.team_project.uni_lodz_park_area.security.model.enums.Role;
+import org.team_project.uni_lodz_park_area.utils.RandomUtil;
 
 import java.util.Collections;
 

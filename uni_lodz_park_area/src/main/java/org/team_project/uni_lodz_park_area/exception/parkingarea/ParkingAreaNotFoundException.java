@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.exception.parkingarea;
 
-import com.project.parkinglot.exception.NotFoundException;
+import org.team_project.uni_lodz_park_area.exception.NotFoundException;
 
 import java.io.Serial;
 

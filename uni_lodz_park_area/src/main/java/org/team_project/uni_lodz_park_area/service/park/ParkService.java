@@ -1,10 +1,10 @@
 package org.team_project.uni_lodz_park_area.service.park;
 
-import com.project.parkinglot.model.dto.request.park.ParkCheckInRequest;
-import com.project.parkinglot.model.dto.request.park.ParkCheckOutRequest;
-import com.project.parkinglot.model.dto.response.park.ParkCheckInResponse;
-import com.project.parkinglot.model.dto.response.park.ParkCheckOutResponse;
-import com.project.parkinglot.model.entity.ParkingAreaEntity;
+import org.team_project.uni_lodz_park_area.model.dto.request.park.ParkCheckInRequest;
+import org.team_project.uni_lodz_park_area.model.dto.request.park.ParkCheckOutRequest;
+import org.team_project.uni_lodz_park_area.model.dto.response.park.ParkCheckInResponse;
+import org.team_project.uni_lodz_park_area.model.dto.response.park.ParkCheckOutResponse;
+import org.team_project.uni_lodz_park_area.model.entity.ParkingAreaEntity;
 
 /**
  * Service interface named {@link ParkService} for managing park operations.

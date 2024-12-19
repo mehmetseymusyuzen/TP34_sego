@@ -1,16 +1,16 @@
 package org.team_project.uni_lodz_park_area.service.priceList.impl;
 
-import com.project.parkinglot.model.Price;
-import com.project.parkinglot.model.PriceList;
-import com.project.parkinglot.model.dto.request.priceList.PriceListCreateRequest;
-import com.project.parkinglot.model.entity.PriceListEntity;
-import com.project.parkinglot.model.mapper.priceList.PriceListDTOMapper;
-import com.project.parkinglot.model.mapper.priceList.PriceListMapper;
-import com.project.parkinglot.repository.PriceListRepository;
-import com.project.parkinglot.service.price.PriceCreateService;
-import com.project.parkinglot.service.priceList.PriceListCreateService;
+import org.team_project.uni_lodz_park_area.model.Price;
+import org.team_project.uni_lodz_park_area.model.PriceList;
+import org.team_project.uni_lodz_park_area.model.dto.request.priceList.PriceListCreateRequest;
+import org.team_project.uni_lodz_park_area.model.entity.PriceListEntity;
+import org.team_project.uni_lodz_park_area.model.mapper.priceList.PriceListDTOMapper;
+import org.team_project.uni_lodz_park_area.model.mapper.priceList.PriceListMapper;
+import org.team_project.uni_lodz_park_area.repository.PriceListRepository;
+import org.team_project.uni_lodz_park_area.service.price.PriceCreateService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.team_project.uni_lodz_park_area.service.priceList.PriceListCreateService;
 
 import java.util.List;
 import java.util.Objects;

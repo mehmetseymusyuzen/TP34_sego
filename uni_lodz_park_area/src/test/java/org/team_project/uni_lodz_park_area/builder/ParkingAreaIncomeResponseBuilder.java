@@ -1,7 +1,7 @@
 package org.team_project.uni_lodz_park_area.builder;
 
 import com.github.javafaker.Faker;
-import com.project.parkinglot.model.dto.response.parkingarea.ParkingAreaIncomeResponse;
+import org.team_project.uni_lodz_park_area.model.dto.response.parkingarea.ParkingAreaIncomeResponse;
 
 import java.math.BigDecimal;
 

@@ -1,7 +1,7 @@
 package org.team_project.uni_lodz_park_area.model.mapper.price;
 
-import com.project.parkinglot.model.dto.request.price.PriceCreateRequest;
-import com.project.parkinglot.model.entity.PriceEntity;
+import org.team_project.uni_lodz_park_area.model.dto.request.price.PriceCreateRequest;
+import org.team_project.uni_lodz_park_area.model.entity.PriceEntity;
 
 /**
  * Mapper class named {@link PriceDTOMapper} to map {@link PriceCreateRequest} to {@link PriceEntity} for saving.

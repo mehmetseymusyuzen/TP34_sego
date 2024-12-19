@@ -1,8 +1,8 @@
 package org.team_project.uni_lodz_park_area.builder;
 
 import com.github.javafaker.Faker;
-import com.project.parkinglot.model.dto.request.parking_area.ParkingAreaCreateRequest;
-import com.project.parkinglot.model.dto.request.priceList.PriceListCreateRequest;
+import org.team_project.uni_lodz_park_area.model.dto.request.parking_area.ParkingAreaCreateRequest;
+import org.team_project.uni_lodz_park_area.model.dto.request.priceList.PriceListCreateRequest;
 
 
 public class ParkingAreaCreateRequestBuilder extends BaseBuilder<ParkingAreaCreateRequest> {

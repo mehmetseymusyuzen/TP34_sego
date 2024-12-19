@@ -1,8 +1,8 @@
 package org.team_project.uni_lodz_park_area.model.entity;
 
-import com.project.parkinglot.common.model.entity.BaseEntity;
-import com.project.parkinglot.model.enums.VehicleType;
-import com.project.parkinglot.security.model.entity.UserEntity;
+import org.team_project.uni_lodz_park_area.common.model.entity.BaseEntity;
+import org.team_project.uni_lodz_park_area.model.enums.VehicleType;
+import org.team_project.uni_lodz_park_area.security.model.entity.UserEntity;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;

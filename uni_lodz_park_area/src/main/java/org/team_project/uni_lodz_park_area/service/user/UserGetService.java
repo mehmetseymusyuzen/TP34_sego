@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.service.user;
 
-import com.project.parkinglot.model.User;
+import org.team_project.uni_lodz_park_area.model.User;
 
 /**
  * Service interface named {@link UserGetService} for retrieving user information.

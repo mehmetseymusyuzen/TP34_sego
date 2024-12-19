@@ -1,7 +1,7 @@
 package org.team_project.uni_lodz_park_area.security.jwt;
 
-import com.project.parkinglot.security.CustomUserDetails;
-import com.project.parkinglot.security.model.enums.TokenClaims;
+import org.team_project.uni_lodz_park_area.security.CustomUserDetails;
+import org.team_project.uni_lodz_park_area.security.model.enums.TokenClaims;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;

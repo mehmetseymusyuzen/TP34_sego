@@ -1,7 +1,7 @@
 package org.team_project.uni_lodz_park_area.builder;
 
 import com.github.javafaker.Faker;
-import com.project.parkinglot.model.dto.request.price.PriceCreateRequest;
+import org.team_project.uni_lodz_park_area.model.dto.request.price.PriceCreateRequest;
 
 import java.math.BigDecimal;
 

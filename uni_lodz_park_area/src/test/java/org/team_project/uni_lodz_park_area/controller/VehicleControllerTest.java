@@ -1,12 +1,12 @@
 package org.team_project.uni_lodz_park_area.controller;
 
-import com.project.parkinglot.base.BaseControllerTest;
-import com.project.parkinglot.builder.VehicleRequestBuilder;
-import com.project.parkinglot.model.Vehicle;
-import com.project.parkinglot.model.dto.request.vehicle.VehicleRequest;
-import com.project.parkinglot.model.dto.response.ParkDetailResponse;
-import com.project.parkinglot.model.dto.response.VehicleParkingDetailResponse;
-import com.project.parkinglot.service.vehicle.impl.VehicleServiceImpl;
+import org.team_project.uni_lodz_park_area.base.BaseControllerTest;
+import org.team_project.uni_lodz_park_area.builder.VehicleRequestBuilder;
+import org.team_project.uni_lodz_park_area.model.Vehicle;
+import org.team_project.uni_lodz_park_area.model.dto.request.vehicle.VehicleRequest;
+import org.team_project.uni_lodz_park_area.model.dto.response.ParkDetailResponse;
+import org.team_project.uni_lodz_park_area.model.dto.response.VehicleParkingDetailResponse;
+import org.team_project.uni_lodz_park_area.service.vehicle.impl.VehicleServiceImpl;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

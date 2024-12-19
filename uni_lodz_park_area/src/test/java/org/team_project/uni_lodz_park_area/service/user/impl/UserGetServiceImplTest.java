@@ -1,14 +1,14 @@
 package org.team_project.uni_lodz_park_area.service.user.impl;
 
-import com.project.parkinglot.base.BaseServiceTest;
-import com.project.parkinglot.builder.UserEntityBuilder;
-import com.project.parkinglot.builder.VehicleEntityBuilder;
-import com.project.parkinglot.exception.user.UserNotFoundException;
-import com.project.parkinglot.model.User;
-import com.project.parkinglot.model.entity.VehicleEntity;
-import com.project.parkinglot.model.mapper.user.UserEntityToUserMapper;
-import com.project.parkinglot.security.model.entity.UserEntity;
-import com.project.parkinglot.service.auth.UserService;
+import org.team_project.uni_lodz_park_area.base.BaseServiceTest;
+import org.team_project.uni_lodz_park_area.builder.UserEntityBuilder;
+import org.team_project.uni_lodz_park_area.builder.VehicleEntityBuilder;
+import org.team_project.uni_lodz_park_area.exception.user.UserNotFoundException;
+import org.team_project.uni_lodz_park_area.model.User;
+import org.team_project.uni_lodz_park_area.model.entity.VehicleEntity;
+import org.team_project.uni_lodz_park_area.model.mapper.user.UserEntityToUserMapper;
+import org.team_project.uni_lodz_park_area.security.model.entity.UserEntity;
+import org.team_project.uni_lodz_park_area.service.auth.UserService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

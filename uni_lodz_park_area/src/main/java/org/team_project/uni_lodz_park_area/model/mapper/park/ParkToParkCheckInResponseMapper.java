@@ -1,8 +1,8 @@
 package org.team_project.uni_lodz_park_area.model.mapper.park;
 
-import com.project.parkinglot.model.Park;
-import com.project.parkinglot.model.dto.response.park.ParkCheckInResponse;
-import com.project.parkinglot.model.mapper.BaseMapper;
+import org.team_project.uni_lodz_park_area.model.Park;
+import org.team_project.uni_lodz_park_area.model.dto.response.park.ParkCheckInResponse;
+import org.team_project.uni_lodz_park_area.model.mapper.BaseMapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;

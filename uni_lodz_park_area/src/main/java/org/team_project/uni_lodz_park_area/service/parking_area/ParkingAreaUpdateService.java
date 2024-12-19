@@ -1,7 +1,7 @@
 package org.team_project.uni_lodz_park_area.service.parking_area;
 
-import com.project.parkinglot.model.ParkingArea;
-import com.project.parkinglot.model.dto.request.parking_area.ParkingAreaUpdateRequest;
+import org.team_project.uni_lodz_park_area.model.ParkingArea;
+import org.team_project.uni_lodz_park_area.model.dto.request.parking_area.ParkingAreaUpdateRequest;
 
 /**
  * Service interface named {@link ParkingAreaUpdateService} for updating parking areas.

@@ -1,7 +1,7 @@
 package org.team_project.uni_lodz_park_area.security.repository;
 
-import com.project.parkinglot.security.model.entity.RefreshToken;
-import com.project.parkinglot.security.model.entity.UserEntity;
+import org.team_project.uni_lodz_park_area.security.model.entity.RefreshToken;
+import org.team_project.uni_lodz_park_area.security.model.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 

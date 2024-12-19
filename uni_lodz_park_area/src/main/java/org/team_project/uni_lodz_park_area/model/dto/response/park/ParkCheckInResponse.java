@@ -1,9 +1,9 @@
 package org.team_project.uni_lodz_park_area.model.dto.response.park;
 
-import com.project.parkinglot.common.model.BaseDomainModel;
-import com.project.parkinglot.model.dto.request.park.ParkCheckInRequest;
-import com.project.parkinglot.model.dto.response.vehicle.VehicleCheckInResponse;
-import com.project.parkinglot.model.enums.ParkStatus;
+import org.team_project.uni_lodz_park_area.common.model.BaseDomainModel;
+import org.team_project.uni_lodz_park_area.model.dto.request.park.ParkCheckInRequest;
+import org.team_project.uni_lodz_park_area.model.dto.response.vehicle.VehicleCheckInResponse;
+import org.team_project.uni_lodz_park_area.model.enums.ParkStatus;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 

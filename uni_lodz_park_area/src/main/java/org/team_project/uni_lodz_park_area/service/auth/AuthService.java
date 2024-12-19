@@ -1,10 +1,10 @@
 package org.team_project.uni_lodz_park_area.service.auth;
 
-import com.project.parkinglot.payload.request.auth.LoginRequest;
-import com.project.parkinglot.payload.request.auth.SignupRequest;
-import com.project.parkinglot.payload.request.auth.TokenRefreshRequest;
-import com.project.parkinglot.payload.response.auth.JWTResponse;
-import com.project.parkinglot.payload.response.auth.TokenRefreshResponse;
+import org.team_project.uni_lodz_park_area.payload.request.auth.LoginRequest;
+import org.team_project.uni_lodz_park_area.payload.request.auth.SignupRequest;
+import org.team_project.uni_lodz_park_area.payload.request.auth.TokenRefreshRequest;
+import org.team_project.uni_lodz_park_area.payload.response.auth.JWTResponse;
+import org.team_project.uni_lodz_park_area.payload.response.auth.TokenRefreshResponse;
 
 /**
  * Service interface named {@link AuthService} for user authentication.

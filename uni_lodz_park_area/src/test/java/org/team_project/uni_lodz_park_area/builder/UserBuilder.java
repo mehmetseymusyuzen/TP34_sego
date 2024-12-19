@@ -1,9 +1,9 @@
 package org.team_project.uni_lodz_park_area.builder;
 
-import com.project.parkinglot.model.User;
-import com.project.parkinglot.model.Vehicle;
-import com.project.parkinglot.security.model.enums.Role;
-import com.project.parkinglot.utils.RandomUtil;
+import org.team_project.uni_lodz_park_area.model.User;
+import org.team_project.uni_lodz_park_area.model.Vehicle;
+import org.team_project.uni_lodz_park_area.security.model.enums.Role;
+import org.team_project.uni_lodz_park_area.utils.RandomUtil;
 
 import java.util.ArrayList;
 

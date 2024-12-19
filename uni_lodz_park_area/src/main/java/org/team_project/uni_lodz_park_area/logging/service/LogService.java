@@ -1,6 +1,6 @@
 package org.team_project.uni_lodz_park_area.logging.service;
 
-import com.project.parkinglot.logging.entity.LogEntity;
+import org.team_project.uni_lodz_park_area.logging.entity.LogEntity;
 
 /**
  * Service interface named {@link LogService} for managing log entities.

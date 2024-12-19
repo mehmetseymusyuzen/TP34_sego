@@ -1,14 +1,14 @@
 package org.team_project.uni_lodz_park_area.controller;
 
-import com.project.parkinglot.model.ParkingArea;
-import com.project.parkinglot.model.dto.request.parking_area.ParkingAreaCreateRequest;
-import com.project.parkinglot.model.dto.request.parking_area.ParkingAreaUpdateRequest;
-import com.project.parkinglot.model.dto.response.parkingarea.ParkingAreaIncomeResponse;
-import com.project.parkinglot.payload.response.CustomResponse;
-import com.project.parkinglot.service.parking_area.ParkingAreaCreateService;
-import com.project.parkinglot.service.parking_area.ParkingAreaDeleteService;
-import com.project.parkinglot.service.parking_area.ParkingAreaGetService;
-import com.project.parkinglot.service.parking_area.ParkingAreaUpdateService;
+import org.team_project.uni_lodz_park_area.model.ParkingArea;
+import org.team_project.uni_lodz_park_area.model.dto.request.parking_area.ParkingAreaCreateRequest;
+import org.team_project.uni_lodz_park_area.model.dto.request.parking_area.ParkingAreaUpdateRequest;
+import org.team_project.uni_lodz_park_area.model.dto.response.parkingarea.ParkingAreaIncomeResponse;
+import org.team_project.uni_lodz_park_area.payload.response.CustomResponse;
+import org.team_project.uni_lodz_park_area.service.parking_area.ParkingAreaCreateService;
+import org.team_project.uni_lodz_park_area.service.parking_area.ParkingAreaDeleteService;
+import org.team_project.uni_lodz_park_area.service.parking_area.ParkingAreaGetService;
+import org.team_project.uni_lodz_park_area.service.parking_area.ParkingAreaUpdateService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

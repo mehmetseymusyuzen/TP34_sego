@@ -1,15 +1,15 @@
 package org.team_project.uni_lodz_park_area.service.price.impl;
 
-import com.project.parkinglot.model.Price;
-import com.project.parkinglot.model.PriceList;
-import com.project.parkinglot.model.dto.request.price.PriceCreateRequest;
-import com.project.parkinglot.model.entity.PriceEntity;
-import com.project.parkinglot.model.mapper.price.PriceDTOMapper;
-import com.project.parkinglot.model.mapper.price.PriceMapper;
-import com.project.parkinglot.model.mapper.priceList.PriceListMapper;
-import com.project.parkinglot.repository.PriceRepository;
-import com.project.parkinglot.service.parking_area.ParkingAreaCreateService;
-import com.project.parkinglot.service.price.PriceCreateService;
+import org.team_project.uni_lodz_park_area.model.Price;
+import org.team_project.uni_lodz_park_area.model.PriceList;
+import org.team_project.uni_lodz_park_area.model.dto.request.price.PriceCreateRequest;
+import org.team_project.uni_lodz_park_area.model.entity.PriceEntity;
+import org.team_project.uni_lodz_park_area.model.mapper.price.PriceDTOMapper;
+import org.team_project.uni_lodz_park_area.model.mapper.price.PriceMapper;
+import org.team_project.uni_lodz_park_area.model.mapper.priceList.PriceListMapper;
+import org.team_project.uni_lodz_park_area.repository.PriceRepository;
+import org.team_project.uni_lodz_park_area.service.parking_area.ParkingAreaCreateService;
+import org.team_project.uni_lodz_park_area.service.price.PriceCreateService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
