@@ -17,6 +17,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.team_project.uni_lodz_park_area.service.priceList.PriceListCreateService;
 
 class ParkingAreaCreateServiceImplTest extends BaseServiceTest {
 
