@@ -20,4 +20,4 @@ scrape_configs:
     static_configs:
       - targets: [ 'parkinglot:1222' ]
         labels:
-          application: 'Parking Lot API'
+          application: 'University of Lodz Park Area'
