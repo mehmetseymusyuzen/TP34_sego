@@ -18,7 +18,7 @@ import io.swagger.v3.oas.annotations.security.SecurityScheme;
                 ),
                 description = "University of Lodz Park Area " +
                         "University of Lodz Park Area is a Spring Boot application covering important and useful features related to managing parking areas, park check-ins and check-outs for drivers, user management, and vehicle management. ",
-                title = "Parking Lot App API",
+                title = "University of Lodz Park Area",
                 version = "1.0.0"
         )
 )
