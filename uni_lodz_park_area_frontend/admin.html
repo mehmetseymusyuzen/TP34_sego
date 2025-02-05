@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Uni Lodz Park Area</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body onload="checkAuth(); loadParkingAreas();">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Admin Panel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showParkingAreas()">Parking Areas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showIncomeSection()">Income Report</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-light" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- Create Parking Area Form -->
+        <div id="createParkingAreaForm" class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Create New Parking Area</h5>
+            </div>
+            <div class="card-body">
+                <form onsubmit="return handleCreateParkingArea(event)">
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="parkName" class="form-label">Parking Area Name</label>
+                            <input type="text" class="form-control" id="parkName" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="location" class="form-label">Location</label>
+                            <input type="text" class="form-control" id="location" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="capacity" class="form-label">Capacity</label>
+                            <input type="number" class="form-control" id="capacity" min="1" max="1000" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="priceListName" class="form-label">Price List Name</label>
+                            <input type="text" class="form-control" id="priceListName" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cost" class="form-label">Cost</label>
+                            <input type="number" class="form-control" id="cost" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Parking Areas List -->
+        <div id="parkingAreasList">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h3>Parking Areas</h3>
+                <div class="search-box">
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search parking area..." onkeyup="searchParkingAreas()">
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Location</th>
+                            <th>City</th>
+                            <th>Capacity</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="parkingAreasTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Income Report Section -->
+        <div id="incomeSection" style="display: none;">
+            <h3>Income Report</h3>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <select class="form-control" id="parkingAreaSelect">
+                        <option value="">Select Parking Area</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <input type="date" class="form-control" id="incomeDate">
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary" onclick="getIncome()">Show Income</button>
+                </div>
+            </div>
+            <div class="card income-card">
+                <div class="card-body">
+                    <h5 class="card-title">Total Income</h5>
+                    <h2 id="totalIncome">0.00</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit Parking Area</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editForm">
+                        <input type="hidden" id="editParkingAreaId">
+                        <div class="mb-3">
+                            <label for="editCapacity" class="form-label">New Capacity</label>
+                            <input type="number" class="form-control" id="editCapacity" min="1" max="1000" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="updateParkingArea()">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html> 
