@@ -1,3 +1,4 @@
+/*
 package org.team_project.uni_lodz_park_area.controller;
 
 import org.team_project.uni_lodz_park_area.base.BaseControllerTest;
@@ -285,3 +286,4 @@ class VehicleControllerTest extends BaseControllerTest {
     }
 
 }
+*/

@@ -19,6 +19,8 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * Controller class named {@link VehicleController} for managing vehicles.
  */
@@ -77,6 +79,21 @@ public class VehicleController {
             security = @SecurityRequirement(name = "bearerAuth"))
     public CustomResponse<VehicleParkingDetailResponse> getParkingDetails(@PathVariable final String licensePlate) {
         return CustomResponse.ok(vehicleService.getParkingDetails(licensePlate));
+    }
+
+    @GetMapping("/user/{user-id}")
+    @PreAuthorize("hasAuthority('ROLE_DRIVER')")
+    @Operation(summary = "Get user's vehicles",
+            description = "Retrieves all vehicles assigned to a specific user.",
+            responses = {
+                    @ApiResponse(responseCode = "200", description = "Successfully retrieved user's vehicles",
+                            content = @Content(schema = @Schema(implementation = CustomResponse.class))),
+                    @ApiResponse(responseCode = "404", description = "User not found"),
+                    @ApiResponse(responseCode = "403", description = "Unauthorized to access this endpoint")
+            },
+            security = @SecurityRequirement(name = "bearerAuth"))
+    public CustomResponse<List<Vehicle>> getUserVehicles(@PathVariable("user-id") @UUID final String userId) {
+        return CustomResponse.ok(vehicleService.getUserVehicles(userId));
     }
 
 }

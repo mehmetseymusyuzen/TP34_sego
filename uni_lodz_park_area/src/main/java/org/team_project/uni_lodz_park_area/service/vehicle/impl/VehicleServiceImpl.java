@@ -145,18 +145,34 @@ public class VehicleServiceImpl implements VehicleService {
      */
     @Override
     public VehicleParkingDetailResponse getParkingDetails(final String licensePlate) {
+        final VehicleEntity vehicleEntity = vehicleRepository.findByLicensePlate(licensePlate)
+                .orElseThrow(() -> new VehicleNotFoundException(licensePlate));
 
-        final VehicleEntity vehicleEntity = vehicleRepository.findByLicensePlate(licensePlate).orElseThrow(() -> new VehicleNotFoundException(licensePlate));
-
-        final List<ParkDetailResponse> parkDetails = vehicleEntity.getParkEntities().stream()
+        // En son park kaydını bul
+        Optional<ParkDetailResponse> lastParkDetail = vehicleEntity.getParkEntities().stream()
+                .filter(park -> park.getCheckOut() == null) // Check-out yapılmamış park kaydı
                 .map(parkEntityToParkDetailResponse::map)
-                .collect(Collectors.toList());
+                .findFirst();
 
         return VehicleParkingDetailResponse.builder()
                 .licensePlate(vehicleEntity.getLicensePlate())
-                .parkDetails(parkDetails)
+                .isParked(lastParkDetail.isPresent())
+                .parkingAreaName(lastParkDetail.map(ParkDetailResponse::getParkingAreaName).orElse(null))
+                .parkingAreaId(lastParkDetail.map(ParkDetailResponse::getParkingAreaId).orElse(null))
+                .checkInTime(lastParkDetail.map(ParkDetailResponse::getCheckInDate).orElse(null))
+                .vehicleType(vehicleEntity.getVehicleType())
                 .build();
+    }
 
+    @Override
+    public List<Vehicle> getUserVehicles(final String userId) {
+        final UserEntity userEntity = userService.findById(userId)
+                .orElseThrow(() -> new UserNotFoundException("Cant find user given id"));
+
+        return vehicleRepository.findByUserEntity(userEntity)
+                .stream()
+                .map(vehicleEntityToVehicleMapper::map)
+                .collect(Collectors.toList());
     }
 
 }

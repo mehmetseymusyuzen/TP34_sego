@@ -3,6 +3,7 @@ package org.team_project.uni_lodz_park_area.model.dto.request.parking_area;
 import org.team_project.uni_lodz_park_area.model.dto.request.priceList.PriceListCreateRequest;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -26,7 +27,8 @@ public class ParkingAreaCreateRequest {
     private String location;
 
     @NotNull
-    @Min(value = 0)
+    @Min(value = 1, message = "Capacity must be at least 1")
+    @Max(value = 1000, message = "Capacity must be at most 1000")
     private Integer capacity;
 
     @NotBlank

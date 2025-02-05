@@ -75,19 +75,24 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public JWTResponse login(LoginRequest request) {
 
-        UsernamePasswordAuthenticationToken authToken =
-                new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword());
+        Authentication auth = authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword()));
 
-        Authentication auth = authenticationManager.authenticate(authToken);
         SecurityContextHolder.getContext().setAuthentication(auth);
+
         String jwtToken = jwtUtils.generateJwtToken(auth);
 
         UserEntity userEntity = userRepository.findByEmail(request.getEmail()).orElseThrow(UserNotFoundException::new);
+        CustomUserDetails userDetails = (CustomUserDetails) auth.getPrincipal();
 
         return JWTResponse.builder()
                 .email(request.getEmail())
                 .token(jwtToken)
                 .refreshToken(refreshTokenService.createRefreshToken(userEntity))
+                .id(userEntity.getId().toString())
+                .roles(userDetails.getAuthorities().stream()
+                        .map(item -> item.getAuthority())
+                        .collect(java.util.stream.Collectors.toList()))
                 .build();
     }
 

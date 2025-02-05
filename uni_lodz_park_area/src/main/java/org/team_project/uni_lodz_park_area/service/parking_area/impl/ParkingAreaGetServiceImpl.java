@@ -14,6 +14,8 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Service implementation class named {@link ParkingAreaGetServiceImpl} for getting parking areas.
@@ -86,13 +88,25 @@ class ParkingAreaGetServiceImpl implements ParkingAreaGetService {
     }
 
     /**
+     * Retrieves all parking areas.
+     *
+     * @return list of all parking areas
+     */
+    @Override
+    public List<ParkingArea> getAllParkingAreas() {
+        return parkingAreaRepository.findAll().stream()
+                .map(parkingAreaEntityToParkingAreaMapper::map)
+                .collect(Collectors.toList());
+    }
+
+    /**
      * Checks if the given date is after the current date.
      *
      * @param date the date to check
      * @throws InvalidDateException if the given date is after the current date
      */
     private void isGivenDateAfterCurrentDate(final LocalDate date) {
-        if (Boolean.TRUE.equals(date.isAfter(LocalDate.now()))) {
+        if (date.isAfter(LocalDate.now())) {
             throw new InvalidDateException();
         }
     }

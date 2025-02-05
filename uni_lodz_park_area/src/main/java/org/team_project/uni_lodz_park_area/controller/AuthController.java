@@ -42,59 +42,58 @@ public class AuthController {
                             content = @Content(schema = @Schema(implementation = CustomResponse.class)))
             })
     public CustomResponse<String> register(@RequestBody SignupRequest request) {
-
         return CustomResponse.created(authService.register(request));
     }
 
     /**
      * Logs in a user and returns JWT tokens.
      *
-     * @param request The LoginRequest object containing user credentials.
-     * @return A CustomResponse containing JWT tokens.
+     * @param request The LoginRequest object containing login credentials.
+     * @return A JWTResponse containing access and refresh tokens.
      */
     @PostMapping("/login")
-    @Operation(summary = "Login user", description = "Logs in a user and returns JWT tokens.",
+    @ResponseStatus(HttpStatus.OK)
+    @Operation(summary = "Login user", description = "Authenticates a user and returns JWT tokens.",
             responses = {
                     @ApiResponse(responseCode = "200", description = "User logged in successfully",
-                            content = @Content(schema = @Schema(implementation = CustomResponse.class)))
+                            content = @Content(schema = @Schema(implementation = JWTResponse.class)))
             })
     public CustomResponse<JWTResponse> login(@RequestBody LoginRequest request) {
-
         return CustomResponse.ok(authService.login(request));
     }
 
     /**
-     * Refreshes the JWT authentication token using a refresh token.
+     * Refreshes an access token using a refresh token.
      *
      * @param request The TokenRefreshRequest object containing the refresh token.
-     * @return A CustomResponse containing the refreshed token.
+     * @return A TokenRefreshResponse containing a new access token.
      */
     @PostMapping("/refreshtoken")
-    @Operation(summary = "Refresh token", description = "Refreshes the JWT authentication token using a refresh token.",
+    @ResponseStatus(HttpStatus.OK)
+    @Operation(summary = "Refresh token", description = "Refreshes an access token using a refresh token.",
             responses = {
                     @ApiResponse(responseCode = "200", description = "Token refreshed successfully",
-                            content = @Content(schema = @Schema(implementation = CustomResponse.class)))
+                            content = @Content(schema = @Schema(implementation = TokenRefreshResponse.class)))
             })
     public CustomResponse<TokenRefreshResponse> refreshToken(@RequestBody TokenRefreshRequest request) {
-
         return CustomResponse.ok(authService.refreshToken(request));
     }
 
     /**
-     * Logs out a user by invalidating the authentication token.
+     * Logs out a user.
      *
-     * @param token The JWT token to invalidate.
+     * @param token The JWT token in the Authorization header.
      * @return A CustomResponse containing a success message.
      */
     @PostMapping("/logout")
-    @Operation(summary = "Logout user", description = "Logs out a user by invalidating the authentication token.",
+    @ResponseStatus(HttpStatus.OK)
+    @Operation(summary = "Logout user", description = "Logs out a user and invalidates their refresh token.",
+            security = @SecurityRequirement(name = "bearerAuth"),
             responses = {
                     @ApiResponse(responseCode = "200", description = "User logged out successfully",
                             content = @Content(schema = @Schema(implementation = CustomResponse.class)))
-            },
-            security = @SecurityRequirement(name = "bearerAuth"))
+            })
     public CustomResponse<String> logout(@RequestHeader("Authorization") String token) {
-
         return CustomResponse.ok(authService.logout(token));
     }
 

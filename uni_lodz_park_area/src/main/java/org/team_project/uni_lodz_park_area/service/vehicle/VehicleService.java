@@ -5,6 +5,8 @@ import org.team_project.uni_lodz_park_area.model.dto.request.vehicle.VehicleRequ
 import org.team_project.uni_lodz_park_area.model.dto.response.VehicleParkingDetailResponse;
 import org.team_project.uni_lodz_park_area.model.entity.VehicleEntity;
 
+import java.util.List;
+
 /**
  * Service interface named {@link VehicleService} for managing vehicles.
  */
@@ -46,5 +48,13 @@ public interface VehicleService {
      * @return the parking details of the vehicle
      */
     VehicleParkingDetailResponse getParkingDetails(final String licensePlate);
+
+    /**
+     * Retrieves all vehicles assigned to a specific user.
+     *
+     * @param userId the ID of the user
+     * @return list of vehicles assigned to the user
+     */
+    List<Vehicle> getUserVehicles(String userId);
 
 }

@@ -23,5 +23,6 @@ public class ParkDetailResponse extends BaseDomainModel {
     private LocalDateTime checkInDate;
     private LocalDateTime checkOutDate;
     private BigDecimal totalCost;
+    private String parkingAreaId;
 
 }

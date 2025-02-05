@@ -22,5 +22,9 @@ public class JWTResponse {
     private String refreshToken;
 
     private String email;
+    
+    private String id;
+    
+    private java.util.List<String> roles;
 
 }

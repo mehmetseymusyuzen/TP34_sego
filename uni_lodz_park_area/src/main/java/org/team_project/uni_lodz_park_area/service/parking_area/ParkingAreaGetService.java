@@ -4,6 +4,7 @@ import org.team_project.uni_lodz_park_area.model.ParkingArea;
 import org.team_project.uni_lodz_park_area.model.dto.response.parkingarea.ParkingAreaIncomeResponse;
 
 import java.time.LocalDate;
+import java.util.List;
 
 /**
  * Service interface named {@link ParkingAreaGetService} for retrieving parking areas.
@@ -34,5 +35,12 @@ public interface ParkingAreaGetService {
      * @return the daily income of the parking area
      */
     ParkingAreaIncomeResponse getDailyIncome(final LocalDate date, final String parkingAreaId);
+
+    /**
+     * Retrieves all parking areas.
+     *
+     * @return list of all parking areas
+     */
+    List<ParkingArea> getAllParkingAreas();
 
 }

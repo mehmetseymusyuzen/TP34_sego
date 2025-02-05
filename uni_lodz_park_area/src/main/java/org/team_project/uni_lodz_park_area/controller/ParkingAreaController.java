@@ -33,6 +33,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDate;
+import java.util.List;
 
 /**
  * Controller class named {@link ParkingAreaController} for managing parking areas.
@@ -48,6 +49,25 @@ public class ParkingAreaController {
     private final ParkingAreaCreateService parkingAreaCreateService;
     private final ParkingAreaDeleteService parkingAreaDeleteService;
     private final ParkingAreaGetService parkingAreaGetService;
+
+    /**
+     * Retrieves all parking areas.
+     *
+     * @return A CustomResponse containing the list of all parking areas.
+     */
+    @GetMapping("/all")
+    @PreAuthorize("hasAnyAuthority('ROLE_ADMIN', 'ROLE_DRIVER')")
+    @Operation(summary = "Get all parking areas",
+            description = "Retrieves a list of all parking areas.",
+            responses = {
+                    @ApiResponse(responseCode = "200", description = "Successfully retrieved all parking areas",
+                            content = @Content(schema = @Schema(implementation = CustomResponse.class))),
+                    @ApiResponse(responseCode = "403", description = "Not authorized to perform this action")
+            })
+    public CustomResponse<List<ParkingArea>> getAllParkingAreas() {
+        final List<ParkingArea> parkingAreas = parkingAreaGetService.getAllParkingAreas();
+        return CustomResponse.ok(parkingAreas);
+    }
 
     /**
      * Creates a new parking area with the specified details.
@@ -81,7 +101,7 @@ public class ParkingAreaController {
      * @return A CustomResponse containing the details of the parking area.
      */
     @GetMapping("/{parkingAreaId}")
-    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
+    @PreAuthorize("hasAnyAuthority('ROLE_ADMIN', 'ROLE_DRIVER')")
     @Operation(summary = "Get a parking area by ID",
             description = "Retrieves details of a parking area by its ID.",
             responses = {
@@ -90,11 +110,8 @@ public class ParkingAreaController {
                     @ApiResponse(responseCode = "404", description = "Parking area not found")
             })
     public CustomResponse<ParkingArea> getParkingAreaById(@PathVariable("parkingAreaId") @UUID final String parkingAreaId) {
-
         final ParkingArea parkingArea = parkingAreaGetService.getParkingAreaById(parkingAreaId);
-
         return CustomResponse.ok(parkingArea);
-
     }
 
     /**
@@ -104,7 +121,7 @@ public class ParkingAreaController {
      * @return A CustomResponse containing the details of the parking area.
      */
     @GetMapping("/name/{name}")
-    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
+    @PreAuthorize("hasAnyAuthority('ROLE_ADMIN', 'ROLE_DRIVER')")
     @Operation(summary = "Get a parking area by name",
             description = "Retrieves details of a parking area by its name.",
             responses = {
@@ -113,11 +130,8 @@ public class ParkingAreaController {
                     @ApiResponse(responseCode = "404", description = "Parking area not found")
             })
     public CustomResponse<ParkingArea> getParkingAreaByName(@PathVariable("name") @NotBlank final String name) {
-
         final ParkingArea parkingArea = parkingAreaGetService.getParkingAreaByName(name);
-
         return CustomResponse.ok(parkingArea);
-
     }
 
     /**
@@ -152,7 +166,7 @@ public class ParkingAreaController {
      * @return A CustomResponse indicating the success of the operation.
      */
     @DeleteMapping("/{parkingAreaId}")
-    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
+    @PreAuthorize("hasAnyAuthority('ROLE_ADMIN')")
     @Operation(summary = "Delete a parking area by ID",
             description = "Deletes a parking area by its ID.",
             responses = {
@@ -161,11 +175,8 @@ public class ParkingAreaController {
                     @ApiResponse(responseCode = "404", description = "Parking area not found")
             })
     public CustomResponse<String> deleteParkingAreaById(@PathVariable("parkingAreaId") @UUID final String parkingAreaId) {
-
         parkingAreaDeleteService.deleteParkingAreaById(parkingAreaId);
-
         return CustomResponse.ok("Parking area with id " + parkingAreaId + " is deleted");
-
     }
 
     /**
@@ -176,7 +187,7 @@ public class ParkingAreaController {
      * @return A CustomResponse indicating the success of the operation.
      */
     @PutMapping("/{parkingAreaId}")
-    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
+    @PreAuthorize("hasAnyAuthority('ROLE_ADMIN')")
     @Operation(summary = "Update a parking area by ID",
             description = "Updates a parking area by its ID based on the provided data.",
             responses = {
@@ -192,7 +203,6 @@ public class ParkingAreaController {
     ) {
         final ParkingArea parkingArea = parkingAreaUpdateService
                 .parkingAreaUpdateByCapacity(parkingAreaId, parkingAreaUpdateRequest);
-
         return CustomResponse.ok("Parking area with id " + parkingArea.getId() + " is updated");
     }
 
